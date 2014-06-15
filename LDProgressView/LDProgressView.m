@@ -187,6 +187,7 @@
         CGContextSetStrokeColorWithColor(context, [[self.color darkerColor] darkerColor].CGColor);
         [roundedRect stroke];
     } else {
+        // fix color when self.showStroke == false
         CGContextSetStrokeColorWithColor(context, self.color.CGColor);
         [roundedRect stroke];
     }
